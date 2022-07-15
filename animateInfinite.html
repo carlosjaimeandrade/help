@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <p>Propaganda</p>
+            <p>Propaganda</p>
+            <p>Propaganda</p>
+            <p>Propaganda</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    body{
+        margin: 0px;
+    }
+    .container{
+        background-color: red;
+        color: #fff;
+        display: flex;
+        
+       
+    }
+    .content{
+       animation: anime 5s infinite linear;
+       background-color: blue;
+       display: flex
+    }
+
+
+    @keyframes anime {
+        from{
+            margin-left: 100%;
+           
+        }
+        to{
+            margin-left: -300px;
+          
+        }
+    }
+</style>
