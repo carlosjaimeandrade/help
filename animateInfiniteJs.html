@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+        <div class="content">
+            <p>Propaganda</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    body {
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    .container {
+        background-color: red;
+        color: #fff;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .content {
+        margin: 10px;
+        height: 50px;
+    }
+</style>
+
+<script>
+    const container = document.querySelector('.container')
+    let i = 1;
+    setInterval(() => {
+        console.log('padc')
+        container.style.marginLeft = `-${i}px`
+        if (container.style.marginLeft == "-100px") {
+            container.children[0].style.width = "0px"
+            container.children[0].remove()
+            i = 1
+            container.insertAdjacentHTML('beforeend', `<div class="content"><p>Propaganda</p></div>`)
+        }
+        i++
+    },1)
+
+</script>
