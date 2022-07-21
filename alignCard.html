@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="card">
+
+
+
+        <div class="card-container">
+            <div class="card-img">
+                <img src="./test-img.jpg" alt="">
+            </div>
+            <div class="card-text">
+                <div>
+                    <h1>Aqui é o seu titulo</h1>
+                    <div>
+                        <p>Aqui é a descrição da publicação </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-container">
+            <div class="card-img">
+                <img src="./test-img.jpg" alt="">
+            </div>
+            <div class="card-text">
+                <div>
+                    <h1>Aqui é o seu titulo um pouco maior para ver como fica</h1>
+                    <div>
+                        <p>Aqui é a descrição da publicação </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+    .card{
+        display: flex;
+        background-color: rgb(153, 123, 123);
+    }
+
+    .card-container{
+        background-color: rgb(84, 165, 52);
+        width: 320px;
+        margin: 5px;
+    }
+
+    .card-img{
+        width: 100%;
+        height: 220px
+    }
+    .card-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card-text{
+        width: 100%;
+        height: 200px;
+        background-color: red;
+        overflow: hidden;
+    }
+
+    .card-text > div{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+    .card-text > div > div{
+        background-color: rgba(0, 101, 119, 0.151);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+</style>
