@@ -1,6 +1,9 @@
 # help
 
-Esse repositório é destinado a criar pequenos códigos com intuído de ajudar alguns colegas, cada arquivo tem sua funcionalidade propria e não tem ligação com outros arquivos.
+Esse repositório é destinado a criar pequenos códigos com intuído de ajudar alguns colegas, cada arquivo ou pasta tem sua funcionalidade propria e não tem ligação com outros arquivos.
+
+Para cada arquivo o mesmo tem funcionalidade unica
+Para cada pasta possui uma pequena estrutura de arquivos relacionada aquela determinada pasta
 
 ## menuToggle.html (HTML - JS)
   Neste arquivo temos como base um codigo js para gerar efeito no momento que abre é fecha um menu lateral.
